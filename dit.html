@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Home Work</title>
+	<script src="https://kit.fontawesome.com/dcaf7cfabd.js" crossorigin="anonymous"></script>
+	<style>
+		* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-image: url("https://coderwall-assets-0.s3.amazonaws.com/uploads/picture/file/1410/noise-bg.png");
+	co
+}
+.middle {
+	width: 90%;
+	margin: auto;
+}
+a {
+	text-decoration: none;
+	color: white;
+}
+/*>>>>>>>>>>>>navigation>>>>>>>>*/
+.headers {
+	background-color: #223047;
+	width: 100%;
+}
+.nav {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-areas:
+	". l l l m m m m h h h .";
+	border-bottom: 1px solid white;
+}
+.nav .logo-box {
+	grid-area: l;
+	background-color: #223047;
+}
+.nav .logo-box a.logo {
+	color: aqua;
+	font-size: 3rem;
+}
+.nav .logo-box .logo sup {
+	font-size: 1rem;
+	border: 1px solid aqua;
+	border-radius: 50%;
+}
+.nav .icon {
+	color: white;
+	font-size: 2rem;
+	margin-top: .3em;
+}
+.nav .main-nav {
+	grid-area: m;
+	font-size: 1.5rem;
+	display: flex;
+	justify-content: space-around;
+}
+.nav .main-nav a {
+	margin-top: .45em;
+}
+.nav .hide-nav {
+	grid-area: h;
+	font-size: 1rem;
+	display: flex;
+	justify-content: space-around;
+}
+.hide-nav input {
+	color: black;
+	font-size: 1.2rem;
+	background-color: #00fff0;
+	margin-top: .4em;
+	height: 35px;
+	border-radius: 7px;
+}
+/*>>>>>>>>>>>>>>>hero>>>>>>>>>>*/
+.hero {
+	color: white;
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	padding-top: 150px;
+	background-color: #223047;
+}
+.left-hero {
+	grid-column: 2 / 5;
+	margin: 100px 0;
+}
+.left-hero h1 {
+	font-weight: normal;
+	margin-bottom: 1.5em;
+}
+.left-hero p {
+	margin-bottom: 2em;
+}
+.left-hero button {
+	padding: 1em;
+	border-radius: 7px;
+	background-color: #00fff0;
+	/*margin-right: .25em;*/
+}
+.right-hero {
+	grid-column: 8 / 10;
+	position: relative;
+	
+}
+.right-hero img {
+	position: absolute;
+	top: 50px;
+	height: 110%;
+	width: 200%;
+}
+.new {
+	width: 100%;
+	background-color: #fff;
+	text-align: center;
+	padding-top: 200px;
+}
+.new h1 {
+	font-weight: normal;
+	width: 23%;
+	margin: auto;
+	font-size: 1.5rem;
+	line-height: 1.6em;
+	margin-bottom: 2em;
+}
+.new hr {
+	width: 10%;
+	margin: auto;
+	border: 2px solid #00fff0;
+}
+.icons {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	justify-content: space-between;
+	margin-top: 8em;
+}
+.ico {
+	margin-bottom: 2em;
+}
+.icons .ico i {
+	background-color: #00fff0;
+	font-size: 3rem;
+	margin-bottom: .6em;
+}
+.icons .ico h3 {
+	font-weight: normal;
+	font-size: 1.3rem;
+	margin-bottom: .8em;
+}
+.icons .ico p {
+	line-height: 1.8em;
+}
+
+/*>>>>>>>>>>>>resposive for navigation item>>>>>>>>*/
+@media screen and (max-width: 768px) {
+	.nav .hide-nav, .nav .main-nav  {
+		display: none;
+	}
+	.nav {
+		grid-template-areas:
+		"l l l l l l l l l l l l"
+	}
+	.nav .logo-box {
+		display: flex;
+		justify-content: space-around;
+	}
+	.hero {
+		grid-template-rows: 1fr 1fr;
+	}
+	.left-hero {
+		grid-column: 4 / 10;
+	}
+	.right-hero {
+		grid-column:  3/ 7;
+	}
+	.left-hero button:last-child {
+		margin-top: 1.3em;
+	}
+	.icons {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+}
+
+@media screen and (min-width: 769px) {
+	 .nav .res {
+	 	display: none
+	 }
+	 .left-hero button:last-child {
+		margin-top: 1.3em;
+}
+
+
+
+
+	</style>
+</head>
+<body>
+	<div class="middle">	
+	<div class="headers">
+			<div class="nav">
+				<div class="logo-box">
+						<a href="#" class="logo">appo<span><sup>R</sup></span>
+						</a>
+						<a href="#" class="icon res"><i class="fas fa-align-justify"></i></a>
+				</div>
+				<nav class="main-nav">
+					<a href="#">Home</a>
+					<a href="#">Features</a>
+					<a href="#">Pricing</a>
+				</nav>
+				<div class="hide-nav">
+						<input type="button" value="Get The App">
+						<a href="#" class="icon"><i class="fas fa-align-justify"></i></a>
+				</div>
+			</div>
+	</div>
+	<div class="hero">
+		<div class="left-hero">
+			<h1>Cmet consectetur adipisicing, elit.accusantium, aliquid placeat exercitationem rerum dignissimos.</p>
+			<button>Download Free Today</button>
+			<button>Reach Out To Us</button>	
+		</div>
+		<div class="right-hero">
+			<img src="http://assets.stickpng.com/thumbs/580b57fbd9996e24bc43bf87.png" alt="iPhone">
+		</div>
+	</div>
+	<div class="new">
+		<h1>Everything needed to power your app brend online </h1>
+		<hr>
+	<div class="icons">
+		<div class="icon1 ico">
+			<i class="fas fa-paint-roller"></i>
+			<h3>Modern Flat Design</h3>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.sed doloribus facere eius quaerat consequuntur, numquam?</p>
+		</div>
+		<div class="icon2 ico">
+			<i class="fas fa-shopping-cart"></i>
+			<h3>First 7 Days Free</h3>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.sed doloribus facere eius quaerat consequuntur, numquam?</p>
+		</div>
+		<div class="icon3 ico">
+			<i class="far fa-comment-alt"></i>
+			<h3>Fully Suppotr</h3>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.sed doloribus facere eius quaerat consequuntur, numquam?</p>
+		</div>
+		<div class="icon4 ico">
+			<i class="fas fa-mobile-alt"></i>
+			<h3>User Friendly</h3>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.sed doloribus facere eius quaerat consequuntur, numquam?</p>
+		</div>
+	</div>
+	</div>
+	<script src="https://kit.fontawesome.com/dcaf7cfabd.js" crossorigin="anonymous"></script>
+</body>
+</html>
